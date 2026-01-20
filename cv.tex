@@ -86,7 +86,9 @@
 
 %Setup hyperref package, and colours for links
 \usepackage[unicode, draft=false]{hyperref}
+\usepackage{xcolor}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\definecolor{verdeCdV}{rgb}{0.0157, 0.8509, 0.4627}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
 \addbibresource{citations.bib}
 \setlength\bibitemsep{1em}
@@ -142,12 +144,12 @@
 % \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Your Name} \\[7.5pt]
-\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
-\href{https://linkedin.com/in/username}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \ 
-\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
-\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ email@mysite.com} \ $|$ \ 
-\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +00.00.000.000} \\
+\Huge{Rodrigo Martins Marcelino} \\ [5.5pt] \normalsize{São Paulo, SP, Brazil  \ $|$ \  28/02/2002} \\[7.5pt]
+\href{https://github.com/rodrigo-marcelino}{\raisebox{-0.05\height}\faGithub\ rodrigo-marcelino} \ $|$ \ 
+\href{https://linkedin.com/in/rodrigo-m-marcelino}{\raisebox{-0.05\height}\faLinkedin\ rodrigo-m-marcelino} \ $|$ \ 
+\href{mailto:orodrigomarcelino28@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ orodrigomarcelino28@gmail.com} \  \ \\ 
+%\href{tel:+5511974113775}{\raisebox{-0.05\height}\faMobile \ +55 (11) 974113775} 
+
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -155,60 +157,78 @@
 %----------------------------------------------------------------------------------------
 
 %Interests/ Keywords/ Summary
-\section{Summary}
-This CV can also be automatically compiled and published using GitHub Actions. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
-
-%Experience
-\section{Work Experience}
-
-\begin{jobshort}{Designation}{Jan 2021 - present}
-long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width
-\end{jobshort}
-
-
-\begin{joblong}{Designation}{Mar 2019 - Jan 2021}
-\item long long line of blah blah that will wrap when the table fills the column width
-\item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
-\end{joblong}
-  
-%Projects
-\section{Projects}
-
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
-\end{tabularx}
+%\section{Summary}
+%This CV can also be automatically complied and published using GitHub Actions. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}	
-2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
 
-2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
+2021 - 2025 & Electrical Engineering at \textbf{UNESP - Guaratinguetá} \hfill \normalsize (Overall Grade: 7.23/10) \\
 
-2022 & Class 12th Some Board \hfill  (Grades) \\
-
-2021 & Class 10th Some Board \hfill  (Grades) \\
 \end{tabularx}
+
+
+%Experience
+\section{Work Experience}
+
+\begin{jobshort}{Software Engineering Intern at \href{https://casadosventos.com.br/}{\textcolor{black}{Casa dos Ventos}}}{Jan 2025 - present}
+    \begin{itemize}
+        \item Contributed to the development of the company's Energy Trading and Risk Management (ETRM) platform, focused on managing energy contracts across both the free (ACL) and regulated (ACR) markets, as well as integrating with multiple external APIs.
+        \item Engaged in modeling using UML and domain-driven design practices, prototyped using Figma, and implemented both the backend (Node.js) and frontend (React), deployed on Google Cloud Platform (GCP).
+    \end{itemize}
+\end{jobshort}
+
+
+%\begin{joblong}{Designation}{Mar 2019 - Jan 2021}
+%\item long long line of blah blah that will wrap when the table fills the column width
+%\item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
+%\end{joblong}
+
+%Projects
+\section{Projects}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Bus Terminal Management App} & \hfill \href{https://demoterminais.flutterflow.app/entryPage}{Link to Demo (Low-Code)} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Developed initially as a low-code prototype during my undergraduate studies, this project later evolved into a software solution that became the central component of my Graduation Project. Designed and built a RESTful API to manage core facility operations, enabling real-time monitoring of occurrences and status tracking of critical terminal equipment.}  \\
+\end{tabularx}
+
+%Projects
+\section{Extracurricular Activities}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Volunteer Tutor – Mathematics and Physics } & \hfill {2023} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+Alongside my Electrical Engineering studies, I volunteered as a tutor for the University's Entrance Exam Preparatory Program. Key contributions included:
+\begin{itemize}
+    \item Conducted weekly tutoring sessions in mathematics and physics for high-school students preparing for university entrance exams.
+    \item Supported students from diverse backgrounds by reinforcing core concepts, solving exercises and guiding study strategies.
+\end{itemize}
+}  \\
+\end{tabularx}
+
+
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
 %----------------------------------------------------------------------------------------
-\section{Publications}
-\begin{refsection}[citations.bib]
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}
+%\section{Publications}
+%\begin{refsection}[citations.bib]
+%\nocite{*}
+%\printbibliography[heading=none]
+%\end{refsection}
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
+\textbf{Computer Languages} &  \normalsize{Typescript, SQL, Java, Python, C, MATLAB}\\
+\textbf{Frameworks and Tools}  &  \normalsize{Node.js, React, Next.js, PostgreSQL, Figma, Git, Google Cloud Platform, Docker}\\
+\textbf{Agile Methodologies} & \normalsize{Scrum} \\
+\textbf{Languages}  &  \normalsize{Portuguese (native), English (fluent), French (intermediate)}\\  
 \end{tabularx}
 
 \vfill
