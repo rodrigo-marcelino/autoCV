@@ -1,4 +1,4 @@
-NAME=cv
+NAME=rodrigo-marcelino-cv
 
 all:
 	latexmk -pdf ${NAME}.tex
