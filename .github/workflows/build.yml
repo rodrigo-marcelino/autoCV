@@ -45,7 +45,7 @@ jobs:
           publish_dir: ./github_deploy
           publish_branch: build
           force_orphan: true
-          enable_jekyll: true
+          enable_jekyll: false
   copy-index-to-build:
     needs: [deploy]
     runs-on: ubuntu-latest
